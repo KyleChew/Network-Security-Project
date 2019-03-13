@@ -1,0 +1,73 @@
+-Introduction
+Lucent Pharma is a pharmaceutical company in perth that is having its network topology reviewed and modify in order to have a more effective security control . The first part of the report will state the vulnerability of the report , incorporate some security hardware and features in the design , provide firewall and IDS/IPS ruleset and provide 10 security policies that will strengthen the security in the firm.In part 2 of the report , we show some tools that can be used to analyse the network within the system such as nmap and wireshark.
+
+Q1.Analyse the current network topology implemented at ‘Lucent Pharma ‘and identify five major vulnerabilities that exist in the network. You are also required to provide sound reasoning behind these identified vulnerabilities.
+The first vulnerability in the network is its lack of intrusion detection system or can also be known as IDS. Intrusion detection system is crucial within a network system, an IDS is a hardware or software application that monitors a network systems for network attacks by filtering through attack alert based upon frequency of previous attacks. (Scheidell ,2009).Some example of IDS includes San Jose Cisco Secure IDS , Atlanta RealSecure , ACARM-ng , AIDE etc. The network in Lucent Pharma also lacks a firewall , firewall are usually the last line of defence against malicious attack by monitoring and controlling the traffic that is coming in and going out with a set of predetermined security ruleset. Firewall are easy to set up and cheaper than IDS which makes no reason not to have one .Other than that, the network system also has unprotected servers. The web, email, application, database server are all interconnected to the switch and once a malware compromised the switch it will cripple the whole network. One way of solving this is to install anti-malware on the server to detect and eliminate any incoming malicious programs.Additionally , the network system in Lucent Pharma is prone to interception and man in the middle attack . The way the network is setup is mostly having one wired or wireless connected to multiple checkpoints such as one switch to another which mean that it is highly possible for a man in the middle attack to be conducted in between assuming there are no physical security being implemented in the system.Lastly, the network system lacks a backup system. If the system gets attacked they will lose all their data , however with a backup server they may be able to recover some data from the last restoration date.
+
+Q2.Place the following security devices/controls, bearing in mind that these devices do not compromise either the network performance or the security of the network:
+a. Firewall
+b. IDS/IPS
+c. Honeypot
+d. Routers/Switches
+e. Other devices that may add value to the ‘Lucent Pharma’ network.
+
+Q3.Explain/Justify why these devices were placed in the chosen locations in (2)?
+Firewall 1 was placed before the connection through the internet because it can filter any incoming and outgoing data that can be malicious , firewall 2 is placed in between 3 switches so that if one segments gets infected it can detect and prevent the other segment from getting infected.The 2 firewall will have different ruleset , the first firewall will have more of a generic ruleset while the second firewall will have a ruleset that stops local network from getting further reinfection. The position of IDS/IPS is placed after the firewall as an extra traffic security measure if the firewall fails to detect a malicious packets then IDS/IPS does its job.Honeypots is place before the router in order to isolated the infection or attacker for further investigation.One router will be place after most of the security measure to ensure it is full protected , it will then be connected to 4 server and 2 swtiches .The first switch will be connected to the wireless access point and connected to 4 department users .Similar to the first switch, the second switch is connected to a wireless access point and 3 department users . The network design also has Virtual protected network to safeguard the ip address from attackers and it also has anti-virus software installed on the servers to prevent malware infections.
+
+Q4.Does the Lucent Pharma network require segregation into multiple domains (i.e. requirement of VLANs)? If yes, please add these additional sub-networks to your topology
+Segregation of network into multiple domains brings many benefits in terms of performance and security , Broadcasts will be contained to local network. Internal network structure will not be visible from outside.The first benefits that it will bring is containment which mean that if a section of machine are infected with malware , it will be easy to quarantine the part of the system making the other segments safe from infection.
+
+Q5.Devise ten security policies that are essential for the Lucent Pharma network. Hint: You may refer to security policies from the SANS (SysAdmin, Audit, Network,And Security) website. However, you are required to draft these policies on your own, i.e., to be written in your own words
+
+1. Remote Access Policy
+● Remote Access such as VPN will be required to have encryption and a strong password
+● During connection , users must ensure that the host connected is not connected to other network . Only a network which the user have complete control have may be permitted to be used.
+● Use of third party software for remote access must be approved by Infosec representative or Business unit manager
+● All users that are connected to the company network must have reliable anti-virus software on their machine
+
+2.Internet Policy
+● Internet usage is within the company only have the sole purpose of conducting relevant business activites and all users of internet within premises must follow company state rules and regulations
+
+3. email policy
+● All usage of email must be obey with Lucent Pharma rules and policies with ethical conduct
+● All incoming and outgoing attachement must be secured with data protection standard
+● Lucent pharma employee email account should be use with the primarily purpose of business communication
+● Users are not permitted to forward company related emails to a third party email system and every email containing business materials must contain Lucent Pharma confidential sign with lucent pharma signature
+
+4.password Protection policy
+● All user and system related passwords must follow the Password Construction Guidelines.
+● All user related password such as email , web and computer login password must be changed every six month with the recommendation of changing every four months.
+● Passwords must not be shared over the telecommunication with anyone.
+● Passwords must not be written down and store anywhere that is close to personal
+space such as office
+
+5.Server Security Policy
+● Operating System configuration of server security should be fo..in accordance with approved InfoSec guidelines.
+● Access to server services should be recorded and protected through methods such as firewall , anti-malware software’s
+● The server must be installed with the most recent update with the exception on business interruptions.
+
+6.Web Application Policy
+● Third party software will need to be fully analyse and asses before installation
+● New application release will need to be fully analyse , asses and approved before
+release into live environment
+● Patches will need to be fully analyse , asses and approved before release into live
+environment
+● Emergency release will have to go rapid risk assessment and approved by chief information officer before release
+
+7.Software Installation policy
+● Employees are not permitted to install any third party software on their office computer
+● Any software that is request to be installed must be approved by Chief information officer and be installed by the information technology department
+
+8.Workstation policy
+● Workstation must be ensure that it is use only for authorized business activities only
+● Installing third party software on workstation is not permitted
+● Food and drinks are not allow near the workstation to prevent spillage
+● Anti-malwares and firewall must be installed and kept up to date in workstations
+
+9.Wireless Communication Policy
+● All wirelesss communication must abide by the standards stated in the Wireless Communication Standard
+● Wireless communication must be set up by authorized information technology department
+● Every wireless related hard must be assigned with a MAC address in order to be track during an incident
+
+10.Disaster Recovery policy
+● Contigency plan which includes Computer Emergency Response Plan , Succession plan ,data study , data backup plan ,equipment status plan and mass media management plan must be created to ensure smooth transition during a disaster.

@@ -17,7 +17,25 @@ Firewall 1 was placed before the connection through the internet because it can 
 Q4.Does the Lucent Pharma network require segregation into multiple domains (i.e. requirement of VLANs)? If yes, please add these additional sub-networks to your topology
 Segregation of network into multiple domains brings many benefits in terms of performance and security , Broadcasts will be contained to local network. Internal network structure will not be visible from outside.The first benefits that it will bring is containment which mean that if a section of machine are infected with malware , it will be easy to quarantine the part of the system making the other segments safe from infection.
 
-Q5.Devise ten security policies that are essential for the Lucent Pharma network. Hint: You may refer to security policies from the SANS (SysAdmin, Audit, Network,And Security) website. However, you are required to draft these policies on your own, i.e., to be written in your own words
+Q5.Create a set of firewall policies and a set of firewall rules that should be implemented by
+the network administrator for firewall(s) placed in the network. Policies must be sound
+and robust to cover the cyber-security of the entire network.
+Firewall Ruleset
+Assumptions
+* 192.168.120.65 , 192.168.120.43 and 192.168.120.34 are unauthenticated traffic
+* 10.1.1.1 is the company ISP address
+*192.168.120.3 is a IP address used by network administrator
+------SEE ATTACHED PICTURE FOR MY FIREWALL RULESET-------------------------------------
+
+Q6.Create a set of IDS/IPS policies and corresponding rules that are to be implemented by the
+network administrator. Policies must be sound and robust to cover cyber-security of the
+entire network
+IDS / IPS Rules
+Assumptions
+* 192.168.120.65 represents any malicious / unauthenticated traffic
+-------SEE ATTACHED PICTURE FOR MY IDS/IPS RULESET--------------------------------------
+
+Q7.Devise ten security policies that are essential for the Lucent Pharma network. Hint: You may refer to security policies from the SANS (SysAdmin, Audit, Network,And Security) website. However, you are required to draft these policies on your own, i.e., to be written in your own words
 
 1. Remote Access Policy
 ● Remote Access such as VPN will be required to have encryption and a strong password
